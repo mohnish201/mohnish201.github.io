@@ -49,7 +49,7 @@ const active = {
   },
 };
 function Navbar() {
-  const [activeLink, setActiveLink] = useState(null);
+
   const [shouldElevate, setShouldElevate] = useState(false);
 
   useEffect(() => {
@@ -65,9 +65,7 @@ function Navbar() {
     };
   }, []);
 
-  const handleSetActiveLink = (path) => {
-    setActiveLink(path);
-  };
+  
   return (
     <Flex
       align="center"
@@ -80,7 +78,7 @@ function Navbar() {
         xl: "space-evenly",
       }}
       w={"100%"}
-      bgColor={"#100C08"}
+      bgColor={"#000000"}
       py={0}
       px={0}
       position="sticky"
@@ -104,7 +102,6 @@ function Navbar() {
           lg: "20px",
           xl: "20px",
         }}
-        border={"2px solid black"}
         mr={"60px"}
         spacing={"25px"}
         display={{
@@ -122,10 +119,11 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-80}
+            offset={-90}
             className={el.class}
             style={nonActive}
             activeStyle={active}
+            key={el.title}
           >
             {el.title}
           </Link>

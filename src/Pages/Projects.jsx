@@ -1,12 +1,314 @@
-import { Box } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Heading,
+  Image,
+  Text,
+  Grid,
+  GridItem,
+  Center,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
+// import { Carousel } from "react-responsive-carousel";
+import medwise from "../Images/medwise.png";
+import finacia from "../Images/finacia.png";
+import godecor from "../Images/godecor.png";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-carousel3";
+import { BsGithub } from "react-icons/bs";
+import { SiNetlify } from "react-icons/si";
 
 function Projects() {
   return (
-    <div id="projects">
-      Projects
-      <Box w={{base: "700px", sm: "800px", md: "1000", lg:"1200", xl: "1200px" }} h="700px" backgroundColor="dodgerblue" m="auto"></Box>
-    </div>
+    <Box m={"auto"} id="projects">
+      <Heading textAlign={"center"} color={"orangered"} pb="70px">
+        Projects
+      </Heading>
+      <Center>
+        <Grid
+          w="90%"
+          gridTemplateColumns="repeat(2, 1fr)"
+          rowGap={"40px"}
+          placeItems="center"
+        >
+          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
+            <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" />
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"orangered"}
+              pb="10px"
+              className="project-title"
+            >
+              Medwise
+            </Heading>
+            <Text
+              pb="10px"
+              color={"white"}
+              className="project-description"
+              textAlign={"justify"}
+            >
+              Medwise provide Health Care Services which allows you to schedule
+              virtual appointments with experienced doctors across various
+              specialties.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Link
+                href="https://github.com/mohnish201/blushing-harmony-5466"
+                target={"_blank"}
+              >
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+
+              <Link href="https://medwise.netlify.app/" target={"_blank"}>
+                <Button
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack justifyContent={"center"} flexWrap="wrap" >
+              <Image
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                className="project-tech-stack"
+                borderRadius={"30px"}
+               
+              />
+              <Image
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
+
+          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
+            <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" />
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"orangered"}
+              pb="10px"
+              className="project-title"
+            >
+              Go Decor
+            </Heading>
+            <Text
+              color={"white"}
+              pb="10px"
+              className="project-description"
+              textAlign={"justify"}
+            >
+              Go Decor is a popular retail store in the United States that
+              offers a wide range of products for the home, including bedding,
+              bath essentials, kitchen appliances, home decor, and more.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Link
+                href="https://github.com/mohnish201/-jumbled-silk-6637"
+                target={"_blank"}
+              >
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link
+                href="https://dainty-faloodeh-a781a1.netlify.app/"
+                target={"_blank"}
+              >
+                <Button
+                  href=""
+                  target={"_blank"}
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack justifyContent={"center"} className="project-tech-stack">
+              <Image
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
+
+          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
+            <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" />
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"orangered"}
+              pb="10px"
+              className="project-title"
+            >
+              Financia
+            </Heading>
+            <Text
+              pb="10px"
+              color={"white"}
+              className="project-description"
+              textAlign={"justify"}
+            >
+              Our financial website is a comprehensive platform that offers a
+              wide range of financial services to users. Whether you're looking
+              to make payments, or manage your finances, our website has you
+              covered.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Link
+                href="https://github.com/mohnish201/sole-friction-3146"
+                target={"_blank"}
+              >
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link
+                href="https://aquamarine-alfajores-b85955.netlify.app/"
+                target="_blank"
+              >
+                <Button
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack justifyContent={"center"} className="project-tech-stack">
+              <Image
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
+
+          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
+            <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" />
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"orangered"}
+              pb="10px"
+              className="project-title"
+            >
+              Go Decor
+            </Heading>
+            <Text
+              color={"white"}
+              pb="10px"
+              className="project-description"
+              textAlign={"justify"}
+            >
+              Our financial website is a comprehensive platform that offers a
+              wide range of financial services to users. Whether you're looking
+              to make payments, or manage your finances, our website has you
+              covered.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Button
+                colorScheme={"red"}
+                size="sm"
+                leftIcon={<BsGithub color="white" />}
+                className="project-github-link"
+              >
+                Github
+              </Button>
+              <Button
+                colorScheme={"cyan"}
+                size="sm"
+                leftIcon={<SiNetlify color="white" />}
+                className="project-deployed-link"
+              >
+                Netlify
+              </Button>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack justifyContent={"center"} className="project-tech-stack">
+              <Image
+                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
+        </Grid>
+      </Center>
+    </Box>
   );
 }
 
