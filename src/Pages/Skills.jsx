@@ -16,9 +16,9 @@ import canva from "../Images/canva.png";
 
 function Skills() {
   return (
-    <div id="skills" style={{ marginTop: "100px" }}>
+    <div id="skills" style={{ marginTop: "150px" }}>
       <Heading color={"orangered"} textAlign={"center"}>
-        Skills
+        My Skills
       </Heading>
       <Flex
         justifyContent={"center"}

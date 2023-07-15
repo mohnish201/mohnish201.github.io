@@ -8,8 +8,8 @@ import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Main_Routes from "./Components/Main_Routes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import ParticlesBackground from "./Components/ParticlesBackground";
+import Statistics from "./Pages/Statistics";
 
 function App() {
   return (
@@ -18,9 +18,10 @@ function App() {
       <Navbar />
 
       <HomePage />
-      <Skills />
       <About />
+      <Skills />
       <Projects />
+      <Statistics/>
       <Contact />
     </div>
   );

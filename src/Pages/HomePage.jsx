@@ -14,7 +14,7 @@ function HomePage() {
   };
 
   return (
-    <div id="home" style={{ marginTop:"40px"}}>
+    <div id="home" style={{ paddingTop:"40px"}}>
       <Flex
         justify={"space-around"}
         alignItems={"center"}

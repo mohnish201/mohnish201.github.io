@@ -23,8 +23,8 @@ import { Link as ReachLink } from "@chakra-ui/react";
 
 const Links = [
   { title: "Home", path: "home", class: "nav-link home" },
-  { title: "Skills", path: "skills", class: "nav-link skills" },
   { title: "About", path: "about", class: "nav-link about" },
+  { title: "Skills", path: "skills", class: "nav-link skills" },
   { title: "Projects", path: "projects", class: "nav-link projects" },
   { title: "Contact", path: "contact", class: "nav-link contact" },
 ];
@@ -119,7 +119,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-90}
+            offset={-85}
             className={el.class}
             style={nonActive}
             activeStyle={active}

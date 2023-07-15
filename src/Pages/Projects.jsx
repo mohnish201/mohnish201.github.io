@@ -9,6 +9,7 @@ import {
   Center,
   Button,
   Link,
+  AspectRatio,
 } from "@chakra-ui/react";
 import React from "react";
 // import { Carousel } from "react-responsive-carousel";
@@ -19,22 +20,46 @@ import godecor from "../Images/godecor.png";
 import { Carousel } from "react-carousel3";
 import { BsGithub } from "react-icons/bs";
 import { SiNetlify } from "react-icons/si";
+import medwise_mockup_video from "../Images/mediwse_mockup_video.mp4";
+import financia_mockup_video from "../Images/financia_mockup_video.mp4";
+import godecor_mockup_video from "../Images/godecor_mockup_video.mp4";
 
 function Projects() {
   return (
-    <Box m={"auto"} id="projects">
-      <Heading textAlign={"center"} color={"orangered"} pb="70px">
+    <Box m={"auto"} id="projects" mt="100px">
+      <Heading textAlign={"center"} color={"orangered"}>
         Projects
       </Heading>
       <Center>
         <Grid
           w="90%"
-          gridTemplateColumns="repeat(2, 1fr)"
+          gridTemplateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(1, 1fr)",
+            md: "repeat(1, 1fr)",
+            lg: "repeat(2, 1fr)",
+            xl: "repeat(2, 1fr)",
+          }}
           rowGap={"40px"}
           placeItems="center"
         >
-          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
-            <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" />
+          <GridItem
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+          >
+            {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
+
+            <video autoPlay loop>
+              <source src={medwise_mockup_video} type="video/mp4" />
+            </video>
+
             <Heading
               size={"md"}
               textAlign="center"
@@ -50,9 +75,9 @@ function Projects() {
               className="project-description"
               textAlign={"justify"}
             >
-              Medwise provide Health Care Services which allows you to schedule
-              virtual appointments with experienced doctors across various
-              specialties.
+              Medwise provide Health Care Services which allows you to find
+              Doctors and schedule virtual appointments with experienced doctors
+              across various specialties.
             </Text>
 
             <HStack justifyContent={"center"} pb="20px" spacing="20px">
@@ -84,21 +109,21 @@ function Projects() {
             <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
               Tech Stacks
             </Heading>
-            <HStack justifyContent={"center"} flexWrap="wrap" >
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
               <Image
                 src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                className="project-tech-stack"
-                borderRadius={"30px"}
                
+                borderRadius={"30px"}
               />
               <Image
                 src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
                 borderRadius={"30px"}
               />
-              <Image
-                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                borderRadius={"30px"}
-              />
+
               <Image
                 src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
                 borderRadius={"30px"}
@@ -106,8 +131,21 @@ function Projects() {
             </HStack>
           </GridItem>
 
-          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
-            <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" />
+          <GridItem
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+          >
+            {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
+            <video autoPlay loop>
+              <source src={godecor_mockup_video} type="video/mp4" />
+            </video>
             <Heading
               size={"md"}
               textAlign="center"
@@ -125,7 +163,7 @@ function Projects() {
             >
               Go Decor is a popular retail store in the United States that
               offers a wide range of products for the home, including bedding,
-              bath essentials, kitchen appliances, home decor, and more.
+              kitchen appliances, home decor, and more.
             </Text>
 
             <HStack justifyContent={"center"} pb="20px" spacing="20px">
@@ -161,7 +199,11 @@ function Projects() {
             <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
               Tech Stacks
             </Heading>
-            <HStack justifyContent={"center"} className="project-tech-stack">
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
               <Image
                 src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
                 borderRadius={"30px"}
@@ -177,8 +219,21 @@ function Projects() {
             </HStack>
           </GridItem>
 
-          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
-            <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" />
+          <GridItem
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+          >
+            {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
+            <video autoPlay loop>
+              <source src={financia_mockup_video} type="video/mp4" />
+            </video>
             <Heading
               size={"md"}
               textAlign="center"
@@ -231,7 +286,11 @@ function Projects() {
             <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
               Tech Stacks
             </Heading>
-            <HStack justifyContent={"center"} className="project-tech-stack">
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
               <Image
                 src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
                 borderRadius={"30px"}
@@ -247,8 +306,21 @@ function Projects() {
             </HStack>
           </GridItem>
 
-          <GridItem w="400px" borderRadius={"30px"} backgroundColor="whiteAlpha.200" padding={"20px"}>
-            <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" />
+          <GridItem
+             w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+          >
+            {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
+            <video autoPlay loop>
+              <source src={medwise_mockup_video} type="video/mp4" />
+            </video>
             <Heading
               size={"md"}
               textAlign="center"
@@ -291,7 +363,11 @@ function Projects() {
             <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
               Tech Stacks
             </Heading>
-            <HStack justifyContent={"center"} className="project-tech-stack">
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
               <Image
                 src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
                 borderRadius={"30px"}
