@@ -23,11 +23,18 @@ import { SiNetlify } from "react-icons/si";
 import medwise_mockup_video from "../Images/mediwse_mockup_video.mp4";
 import financia_mockup_video from "../Images/financia_mockup_video.mp4";
 import godecor_mockup_video from "../Images/godecor_mockup_video.mp4";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
 
 function Projects() {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <Box m={"auto"} id="projects" mt="100px">
-      <Heading textAlign={"center"} color={"orangered"}>
+      <Heading textAlign={"center"} color={"orangered"}  data-aos="zoom-in-up">
         Projects
       </Heading>
       <Center>
@@ -53,6 +60,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
+            data-aos="flip-left"
           >
             {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
 
@@ -141,6 +149,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
+            data-aos="flip-right"
           >
             {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>
@@ -229,6 +238,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
+            data-aos="flip-left"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>
@@ -316,6 +326,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
+            data-aos="flip-right"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>

@@ -5,6 +5,12 @@ import { Box, Button, Flex, Heading, Image, VStack } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import styled, { keyframes } from "styled-components";
 import { HiDocumentDownload } from "react-icons/hi";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
+
+
+
 
 function HomePage() {
   const handleDownload = () => {
@@ -12,6 +18,11 @@ function HomePage() {
       "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=sharing"
     );
   };
+
+
+  useEffect(()=>{
+   Aos.init()
+  },[])
 
   return (
     <div id="home" style={{ paddingTop:"40px"}}>
@@ -40,6 +51,7 @@ function HomePage() {
           fontFamily={"heading"}
           spacing={"20px"}
           textAlign={"center"}
+          
         >
           <Heading
             fontSize={{
@@ -62,6 +74,7 @@ function HomePage() {
               xl: "35px",
             }}
             id="user-detail-name"
+            data-aos="zoom-in"
           >
             I am Mohnish Vishwakarma
           </Heading>
@@ -85,6 +98,7 @@ function HomePage() {
             onClick={handleDownload}
             className="nav-link resume"
             id="resume-button-1"
+            data-aos="zoom-in"
           >
             Resume
           </Button>
@@ -98,11 +112,13 @@ function HomePage() {
             lg: "500px",
             xl: "600px",
           }}
+          data-aos="fade-left"
         >
           <FloatingImage
             src={developer_male}
             alt="profile_pic"
             width={"100%"}
+           
           />
         </Box>
       </Flex>

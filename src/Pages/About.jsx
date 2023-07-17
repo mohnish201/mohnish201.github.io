@@ -2,7 +2,15 @@ import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import enhancedPhoto from "../Images/enhancedPhoto.png";
 
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
+
 function About() {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <div
       id="about"
@@ -34,6 +42,7 @@ function About() {
             xl: "300px",
           }}
           borderRadius={"130px 130px 0px 0px"}
+          data-aos="fade-right"
         >
           <Image
             src={enhancedPhoto}
@@ -46,7 +55,7 @@ function About() {
           />
         </Box>
 
-        <VStack textAlign={"center"} spacing={"20px"}>
+        <VStack textAlign={"center"} spacing={"20px"} data-aos="zoom-in-up">
           <Heading color="orangered">About Me</Heading>
           <Text
             color="white"

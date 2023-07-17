@@ -13,8 +13,15 @@ import vercel from "../Images/vercel.png";
 import express from "../Images/express.png";
 import chakraui from "../Images/chakraui.png";
 import canva from "../Images/canva.png";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import Aos from "aos";
 
 function Skills() {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
     <div id="skills" style={{ marginTop: "150px" }}>
       <Heading color={"orangered"} textAlign={"center"}>
@@ -24,6 +31,7 @@ function Skills() {
         justifyContent={"center"}
         background={"linear-gradient(to bottom, #000000 0%, #000000 100%)"}
         mt="60px"
+        data-aos="zoom-in-up"
       >
         <Carousel
           height={300}
