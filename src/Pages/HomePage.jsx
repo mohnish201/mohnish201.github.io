@@ -5,12 +5,9 @@ import { Box, Button, Flex, Heading, Image, VStack } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import styled, { keyframes } from "styled-components";
 import { HiDocumentDownload } from "react-icons/hi";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
-
-
-
 
 function HomePage() {
   const handleDownload = () => {
@@ -19,13 +16,12 @@ function HomePage() {
     );
   };
 
-
-  useEffect(()=>{
-   Aos.init()
-  },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
-    <div id="home" style={{ paddingTop:"40px"}}>
+    <div id="home" style={{ paddingTop: "40px" }}>
       <Flex
         justify={"space-around"}
         alignItems={"center"}
@@ -51,7 +47,6 @@ function HomePage() {
           fontFamily={"heading"}
           spacing={"20px"}
           textAlign={"center"}
-          
         >
           <Heading
             fontSize={{
@@ -74,7 +69,6 @@ function HomePage() {
               xl: "35px",
             }}
             id="user-detail-name"
-            data-aos="zoom-in"
           >
             I am Mohnish Vishwakarma
           </Heading>
@@ -95,12 +89,18 @@ function HomePage() {
           <Button
             colorScheme="purple"
             rightIcon={<HiDocumentDownload />}
-            onClick={handleDownload}
+            // onClick={handleDownload}
             className="nav-link resume"
-            id="resume-button-1"
-            data-aos="zoom-in"
+            id="resume-button-2"
           >
-            Resume
+            <a
+              href="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
+              id="resume-link-2"
+              download={true}
+              target={"_blank"}
+            >
+              Resume
+            </a>
           </Button>
         </VStack>
 
@@ -112,13 +112,11 @@ function HomePage() {
             lg: "500px",
             xl: "600px",
           }}
-          data-aos="fade-left"
         >
           <FloatingImage
             src={developer_male}
             alt="profile_pic"
             width={"100%"}
-           
           />
         </Box>
       </Flex>
@@ -133,7 +131,7 @@ const floatingAnimation = keyframes`
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(0, 15px); /* Adjust the distance and direction of the float */
+    transform: translate(0, 20px); /* Adjust the distance and direction of the float */
   }
 `;
 

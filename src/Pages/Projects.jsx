@@ -33,7 +33,7 @@ function Projects() {
     Aos.init()
   },[])
   return (
-    <Box m={"auto"} id="projects" mt="100px">
+    <Box m={"auto"} id="projects" mt="200px">
       <Heading textAlign={"center"} color={"orangered"}  data-aos="zoom-in-up">
         Projects
       </Heading>
@@ -60,7 +60,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
-            data-aos="flip-left"
+            data-aos="zoom-in-up"
           >
             {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
 
@@ -149,7 +149,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
-            data-aos="flip-right"
+            data-aos="zoom-in-up"
           >
             {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>
@@ -238,7 +238,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
-            data-aos="flip-left"
+            data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>
@@ -326,7 +326,7 @@ function Projects() {
             }}
             padding={"20px"}
             className="project-card"
-            data-aos="flip-right"
+            data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
             <video autoPlay loop>

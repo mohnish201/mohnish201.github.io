@@ -3,8 +3,9 @@ import React from "react";
 import enhancedPhoto from "../Images/enhancedPhoto.png";
 
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
 import Aos from "aos";
+import { useEffect } from "react";
+
 
 function About() {
 
@@ -16,8 +17,9 @@ function About() {
       id="about"
       className="about section"
       width="90%"
-      style={{ marginTop: "100px" }}
+      style={{ marginTop: "150px", marginBottom:"150px" }}
     >
+     
       <Flex
         justifyContent={"space-evenly"}
         alignItems={"center"}
@@ -88,6 +90,7 @@ function About() {
           </Text>
         </VStack>
       </Flex>
+      
     </div>
   );
 }

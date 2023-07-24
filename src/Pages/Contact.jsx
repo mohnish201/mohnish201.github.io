@@ -20,6 +20,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { VscGithub } from "react-icons/vsc";
 import { SiLinkedin } from "react-icons/si";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const initState = {
   name: "",
@@ -44,8 +46,12 @@ function Contact() {
     }
   };
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <Box id="contact" mt="150px">
+    <Box id="contact" mt="150px" data-aos="zoom-in-up">
       <Heading color={"orangered"} mb="30px" textAlign="center">
         Contact Me
       </Heading>
@@ -101,14 +107,22 @@ function Contact() {
             </HStack>
           </Box>
 
-          <HStack spacing={"30px"} align="center">
-          <Link id="contact-linkedin">
-            <SiLinkedin size={"30px"} color="white" />
-          </Link>
-          <Link id="contact-github">
-            <VscGithub size="30px" color="white" />
-          </Link>
-        </HStack>
+          <HStack spacing={"30px"} justifyContent="center" m="auto">
+            <Link
+              id="contact-linkedin"
+              href="https://www.linkedin.com/in/mohnish-vishwakarma-172196230/"
+              target={"_blank"}
+            >
+              <SiLinkedin size={"30px"} color="white" />
+            </Link>
+            <Link
+              id="contact-github"
+              href="https://github.com/mohnish201"
+              target={"_blank"}
+            >
+              <VscGithub size="30px" color="white" />
+            </Link>
+          </HStack>
         </VStack>
 
         <form onSubmit={handleFormSubmit}>
@@ -189,9 +203,9 @@ function Contact() {
             </Center>
           </FormControl>
         </form>
-
-        
       </Flex>
+
+      <Box h="120px" bgColor={"black"}></Box>
     </Box>
   );
 }

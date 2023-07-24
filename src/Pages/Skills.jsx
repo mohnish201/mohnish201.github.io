@@ -23,7 +23,7 @@ function Skills() {
     Aos.init()
   },[])
   return (
-    <div id="skills" style={{ marginTop: "150px" }}>
+    <div id="skills" style={{ marginTop: "250px" }}>
       <Heading color={"orangered"} textAlign={"center"}>
         My Skills
       </Heading>
