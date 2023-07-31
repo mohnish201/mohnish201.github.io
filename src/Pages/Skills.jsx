@@ -29,7 +29,6 @@ function Skills() {
       </Heading>
       <Flex
         justifyContent={"center"}
-        background={"linear-gradient(to bottom, #000000 0%, #000000 100%)"}
         mt="60px"
         data-aos="zoom-in-up"
       >

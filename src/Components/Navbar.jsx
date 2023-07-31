@@ -177,14 +177,14 @@ function Navbar() {
           xl: "inline",
         }}
       >
-        <a
+        <ReachLink
           href="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
           id="resume-link-1"
           download={true}
           target={"_blank"}
         >
           Resume
-        </a>
+        </ReachLink>
       </Button>
 
       <Menu>

@@ -1,7 +1,7 @@
 import React from "react";
 import enhacedPhoto from "../Images/enhancedPhoto.png";
 import developer_male from "../Images/developer_male.png";
-import { Box, Button, Flex, Heading, Image, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Link, VStack } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import styled, { keyframes } from "styled-components";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -93,14 +93,14 @@ function HomePage() {
             className="nav-link resume"
             id="resume-button-2"
           >
-            <a
+            <Link
               href="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
               id="resume-link-2"
               download={true}
               target={"_blank"}
             >
               Resume
-            </a>
+            </Link>
           </Button>
         </VStack>
 

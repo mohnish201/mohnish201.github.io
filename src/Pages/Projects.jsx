@@ -23,18 +23,18 @@ import { SiNetlify } from "react-icons/si";
 import medwise_mockup_video from "../Images/mediwse_mockup_video.mp4";
 import financia_mockup_video from "../Images/financia_mockup_video.mp4";
 import godecor_mockup_video from "../Images/godecor_mockup_video.mp4";
-import 'aos/dist/aos.css';
+import Money_Mentor_mockup_video from "../Images/Money_Mentor_mockup_video.mp4";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
 
 function Projects() {
-
-  useEffect(()=>{
-    Aos.init()
-  },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <Box m={"auto"} id="projects" mt="200px">
-      <Heading textAlign={"center"} color={"orangered"}  data-aos="zoom-in-up">
+      <Heading textAlign={"center"} color={"orangered"} data-aos="zoom-in-up">
         Projects
       </Heading>
       <Center>
@@ -64,7 +64,7 @@ function Projects() {
           >
             {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
 
-            <video autoPlay loop>
+            <video autoPlay loop muted>
               <source src={medwise_mockup_video} type="video/mp4" />
             </video>
 
@@ -124,7 +124,6 @@ function Projects() {
             >
               <Image
                 src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-               
                 borderRadius={"30px"}
               />
               <Image
@@ -152,7 +151,7 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop>
+            <video autoPlay loop muted>
               <source src={godecor_mockup_video} type="video/mp4" />
             </video>
             <Heading
@@ -241,7 +240,7 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop>
+            <video autoPlay loop muted>
               <source src={financia_mockup_video} type="video/mp4" />
             </video>
             <Heading
@@ -317,7 +316,7 @@ function Projects() {
           </GridItem>
 
           <GridItem
-             w={{
+            w={{
               base: "300px",
               sm: "300px",
               md: "600px",
@@ -329,8 +328,8 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop>
-              <source src={medwise_mockup_video} type="video/mp4" />
+            <video autoPlay loop muted>
+              <source src={Money_Mentor_mockup_video} type="video/mp4" />
             </video>
             <Heading
               size={"md"}
@@ -339,7 +338,7 @@ function Projects() {
               pb="10px"
               className="project-title"
             >
-              Go Decor
+              Money Mentor
             </Heading>
             <Text
               color={"white"}
@@ -347,29 +346,36 @@ function Projects() {
               className="project-description"
               textAlign={"justify"}
             >
-              Our financial website is a comprehensive platform that offers a
-              wide range of financial services to users. Whether you're looking
-              to make payments, or manage your finances, our website has you
-              covered.
+              Our website is a comprehensive platform that caters to diverse
+              financial needs, offering expertly crafted solutions from personal
+              loans to business funding. Start your journey towards financial
+              stability.
             </Text>
 
             <HStack justifyContent={"center"} pb="20px" spacing="20px">
-              <Button
-                colorScheme={"red"}
-                size="sm"
-                leftIcon={<BsGithub color="white" />}
-                className="project-github-link"
+              <Link
+                href="https://github.com/mohnish201/vogue-pocket-8479"
+                target="_blank"
               >
-                Github
-              </Button>
-              <Button
-                colorScheme={"cyan"}
-                size="sm"
-                leftIcon={<SiNetlify color="white" />}
-                className="project-deployed-link"
-              >
-                Netlify
-              </Button>
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link href="https://money-mentor.netlify.app/" target="_blank">
+                <Button
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
             </HStack>
             <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
               Tech Stacks
@@ -380,15 +386,21 @@ function Projects() {
               flexWrap="wrap"
             >
               <Image
-                src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
                 borderRadius={"30px"}
               />
               <Image
                 src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
                 borderRadius={"30px"}
               />
+
               <Image
-                src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
+                borderRadius={"30px"}
+              />
+              
+              <Image
+                src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
                 borderRadius={"30px"}
               />
             </HStack>
