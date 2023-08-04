@@ -180,7 +180,7 @@ function Navbar() {
         <ReachLink
           href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
           id="resume-link-1"
-          download={true}
+          // download={true}
           target={"_blank"}
         >
           Resume
