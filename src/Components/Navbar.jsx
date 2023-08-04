@@ -178,7 +178,7 @@ function Navbar() {
         }}
       >
         <ReachLink
-          href="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
+          href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
           id="resume-link-1"
           download={true}
           target={"_blank"}
