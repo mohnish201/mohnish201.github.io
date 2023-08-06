@@ -14,6 +14,7 @@ import {
   IconButton,
   color,
   Button,
+  background,
 } from "@chakra-ui/react";
 import Mohclickslogowhite from "../Images/Mohclickslogowhite.png";
 import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
@@ -39,6 +40,8 @@ const nonActive = {
   cursor: "pointer",
   transition: "color 0.2s",
 };
+
+
 
 const active = {
   color: "#ff4500",
@@ -129,7 +132,7 @@ function Navbar() {
           lg: "flex",
           xl: "flex",
         }}
-        _hover={{color:"orangered"}}
+        // _hover={{ color: "orangered" }}
       >
         {Links.map((el) => (
           <Link
@@ -143,7 +146,6 @@ function Navbar() {
             style={nonActive}
             activeStyle={active}
             key={el.title}
-           
           >
             {el.title}
           </Link>
@@ -162,30 +164,29 @@ function Navbar() {
         </ReachLink>
       </HStack> */}
 
-      <Button
-        colorScheme="purple"
-        rightIcon={<HiDocumentDownload />}
-        // onClick={handleDownload}
-        className="nav-link resume"
-        id="resume-button-1"
-        size={"sm"}
-        display={{
-          base: "none",
-          sm: "none",
-          md: "inline",
-          lg: "inline",
-          xl: "inline",
-        }}
+      <ReachLink
+        href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
+        download
+        target={"_blank"}
       >
-        <ReachLink
-          href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
-          id="resume-link-1"
-          // download={true}
-          target={"_blank"}
+        <Button
+          colorScheme="purple"
+          rightIcon={<HiDocumentDownload />}
+          // onClick={handleDownload}
+          className="nav-link resume"
+          id="resume-button-1"
+          size={"sm"}
+          display={{
+            base: "none",
+            sm: "none",
+            md: "inline",
+            lg: "inline",
+            xl: "inline",
+          }}
         >
           Resume
-        </ReachLink>
-      </Button>
+        </Button>
+      </ReachLink>
 
       <Menu>
         <MenuButton
@@ -203,49 +204,32 @@ function Navbar() {
           border="none"
         />
 
-        <MenuList bgColor={"orangeRed"} color={"white"}>
-          <Link to="home">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              Home
-            </MenuItem>
+        <MenuList>
+          <Link to="home" _hover={{bgColor:"orangered"}}>
+            <MenuItem>Home</MenuItem>
           </Link>
 
           <Link to="skills">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              Skills
-            </MenuItem>
+            <MenuItem>Skills</MenuItem>
           </Link>
 
           <Link to="about">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              About
-            </MenuItem>
+            <MenuItem>About</MenuItem>
           </Link>
 
           <Link to="projects">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              Projects
-            </MenuItem>
+            <MenuItem>Projects</MenuItem>
           </Link>
 
           <Link to="statistics">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              Statistics
-            </MenuItem>
+            <MenuItem>Statistics</MenuItem>
           </Link>
 
           <Link to="contact">
-            <MenuItem bgColor={"orangeRed"} color={"white"}>
-              Contact
-            </MenuItem>
+            <MenuItem>Contact</MenuItem>
           </Link>
 
-          <MenuItem
-            bgColor={"orangeRed"}
-            color={"white"}
-            onClick={handleDownload}
-            id="resume-button-1"
-          >
+          <MenuItem onClick={handleDownload} id="resume-button-1">
             Resume
           </MenuItem>
         </MenuList>

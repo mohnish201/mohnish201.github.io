@@ -84,8 +84,8 @@ function About() {
             }}
             id="user-detail-intro"
           >
-            I am a skilled full-stack developer with expertise in both front-end
-            and back-end development. I love creating efficient and
+            I am a skilled full-stack developer Proficient in  with expertise in both Frontend
+            and Backend development. I love creating efficient and
             user-friendly web applications.
           </Text>
         </VStack>

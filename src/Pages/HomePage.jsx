@@ -1,7 +1,16 @@
 import React from "react";
 import enhacedPhoto from "../Images/enhancedPhoto.png";
 import developer_male from "../Images/developer_male.png";
-import { Box, Button, Flex, Heading, Image, Link, VStack } from "@chakra-ui/react";
+import wave_hand from '../Images/wave _hand.gif'
+import {
+  Box,
+  Button,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  VStack,
+} from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import styled, { keyframes } from "styled-components";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -57,8 +66,10 @@ function HomePage() {
               xl: "35px",
             }}
             color={"orangered"}
+            display="inline"
           >
-            Hii there ! 👦🏻
+            Hii there ! 
+            <Image style={{display:"inline", width:"70x", height:"75px", verticalAlign: "middle" }}   src={wave_hand} />
           </Heading>
           <Heading
             fontSize={{
@@ -86,22 +97,21 @@ function HomePage() {
             id="user-detail-intro"
           />
 
-          <Button
-            colorScheme="purple"
-            rightIcon={<HiDocumentDownload />}
-            // onClick={handleDownload}
-            className="nav-link resume"
-            id="resume-button-2"
+          <Link
+            href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
+            target="_blank"
+            download
           >
-            <Link
-              href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
-              id="resume-link-2"
-              // download={true}
-              target={"_blank"}
+            <Button
+              colorScheme="purple"
+              rightIcon={<HiDocumentDownload />}
+              // onClick={handleDownload}
+              className="nav-link resume"
+              id="resume-button-2"
             >
               Resume
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </VStack>
 
         <Box

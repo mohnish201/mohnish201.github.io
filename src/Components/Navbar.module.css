@@ -1,0 +1,21 @@
+/* Navbar.module.css */
+.navlink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .navlink-active {
+    color: orangered;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .navlink:hover {
+    color: orangered; /* Replace with the hover color */
+  }
+  
+  /* Add other styles if needed */
+  
