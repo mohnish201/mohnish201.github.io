@@ -1,25 +1,30 @@
-import { Box, Flex, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 import enhancedPhoto from "../Images/enhancedPhoto.png";
 
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
 
-
 function About() {
-
-  useEffect(()=>{
-    Aos.init()
-  },[])
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div
       id="about"
       className="about section"
       width="90%"
-      style={{ marginTop: "150px", marginBottom:"150px" }}
+      style={{ marginTop: "150px", marginBottom: "150px" }}
     >
-     
       <Flex
         justifyContent={"space-evenly"}
         alignItems={"center"}
@@ -57,40 +62,44 @@ function About() {
           />
         </Box>
 
-        <VStack textAlign={"center"} spacing={"20px"} data-aos="zoom-in-up">
-          <Heading color="orangered">About Me</Heading>
-          <Text
-            color="white"
-            w={{
-              base: "280px",
-              sm: "280px",
-              md: "320px",
-              lg: "350px",
-              xl: "350px",
-            }}
-            fontSize={{
-              base: "18px",
-              sm: "18px",
-              md: "18px",
-              lg: "20px",
-              xl: "20px",
-            }}
-            textAlign={{
-              base: "center",
-              sm: "center",
-              md: "center",
-              lg: "center",
-              xl: "center",
-            }}
-            id="user-detail-intro"
-          >
-            I am a skilled full-stack developer Proficient in  with expertise in both Frontend
-            and Backend development. I love creating efficient and
-            user-friendly web applications.
-          </Text>
+        <VStack textAlign={"justify"} spacing={"20px"} data-aos="zoom-in-up">
+          <Heading color="#FC4D3C" fontSize={"40px"}>
+            About Me
+          </Heading>
+          <Container>
+            <Text
+              color="white"
+              w={{
+                base: "280px",
+                sm: "280px",
+                md: "320px",
+                lg: "350px",
+                xl: "350px",
+              }}
+              fontSize={{
+                base: "18px",
+                sm: "18px",
+                md: "18px",
+                lg: "20px",
+                xl: "20px",
+              }}
+              // textAlign={{
+              //   base: "center",
+              //   sm: "center",
+              //   md: "center",
+              //   lg: "center",
+              //   xl: "center",
+              // }}
+              id="user-detail-intro"
+            >
+              Greetings! I'm Mohnish Vishwakarma, a skilled full-stack developer
+              with a passion for creating efficient and user-friendly web
+              applications. With expertise in both Frontend and Backend
+              development, I thrive on bringing digital visions to life.
+            </Text>
+          </Container>
         </VStack>
       </Flex>
-      
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import enhacedPhoto from "../Images/enhancedPhoto.png";
 import developer_male from "../Images/developer_male.png";
-import wave_hand from '../Images/wave _hand.gif'
+import wave_hand from "../Images/wave _hand.gif";
+import homepage_image from "../Images/homepage_image.png";
 import {
   Box,
   Button,
@@ -39,49 +40,71 @@ function HomePage() {
         flexDirection={{
           base: "column",
           sm: "column",
-          md: "row",
+          md: "column",
           lg: "row",
           xl: "row",
         }}
       >
         <VStack
           fontSize={{
-            base: "20px",
-            sm: "20px",
-            md: "25px",
-            lg: "30px",
-            xl: "30px",
+            base: "30px",
+            sm: "35px",
+            md: "50px",
+            lg: "45px",
+            xl: "55px",
           }}
           color={"white"}
           fontFamily={"heading"}
           spacing={"20px"}
-          textAlign={"center"}
+          alignItems={{
+            base: "center",
+            sm: "center",
+            md: "center",
+            lg: "left",
+            xl: "left",
+          }}
+          w={{
+            base: "300px",
+            sm: "300px",
+            md: "400px",
+            lg: "500px",
+            xl: "500px",
+          }}
         >
           <Heading
             fontSize={{
-              base: "25px",
-              sm: "25px",
-              md: "25px",
-              lg: "35px",
-              xl: "35px",
+              base: "30px",
+              sm: "35px",
+              md: "50px",
+              lg: "45px",
+              xl: "55px",
             }}
-            color={"orangered"}
+            color={"#ffffff"}
             display="inline"
           >
-            Hii there ! 
-            <Image style={{display:"inline", width:"70x", height:"75px", verticalAlign: "middle" }}   src={wave_hand} />
+            Hi,
+            {/* <Image
+              style={{
+                display: "inline",
+                width: "70x",
+                height: "75px",
+                verticalAlign: "middle",
+              }}
+              src={wave_hand}
+            /> */}
           </Heading>
           <Heading
             fontSize={{
-              base: "25px",
-              sm: "25px",
-              md: "25px",
-              lg: "35px",
-              xl: "35px",
+              base: "30px",
+              sm: "35px",
+              md: "50px",
+              lg: "45px",
+              xl: "55px",
             }}
             id="user-detail-name"
+            color={"#FC4D3C"}
           >
-            I am Mohnish Vishwakarma
+            I'am Mohnish,
           </Heading>
           <Typewriter
             options={{
@@ -89,7 +112,7 @@ function HomePage() {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString("Full Stack Web Developer")
+                .typeString("Web Developer")
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
@@ -116,15 +139,15 @@ function HomePage() {
 
         <Box
           w={{
-            base: "250px",
+            base: "280px",
             sm: "300px",
-            md: "400px",
-            lg: "500px",
-            xl: "600px",
+            md: "500px",
+            lg: "650px",
+            xl: "780px",
           }}
         >
           <FloatingImage
-            src={developer_male}
+            src={homepage_image}
             alt="profile_pic"
             width={"100%"}
           />

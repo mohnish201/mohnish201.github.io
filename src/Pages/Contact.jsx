@@ -52,8 +52,8 @@ function Contact() {
 
   return (
     <Box id="contact" mt="150px" data-aos="zoom-in-up">
-      <Heading color={"orangered"} mb="30px" textAlign="center">
-        Contact Me
+      <Heading color={"#FC4D3C"} mb="30px" textAlign="center" fontSize={"40px"}>
+      Let's connect and turn ideas into realities!
       </Heading>
       <Flex
         justify={"space-evenly"}
@@ -205,7 +205,7 @@ function Contact() {
         </form>
       </Flex>
 
-      <Box h="120px" bgColor={"black"}></Box>
+      <Box h="120px" bgColor={"#080808"}></Box>
     </Box>
   );
 }

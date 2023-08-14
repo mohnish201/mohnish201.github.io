@@ -19,7 +19,7 @@ const Statistics = () => {
   }, []);
   return (
     <Box margin={"auto"} mt="150px" id="statistics">
-      <Heading color="orangered" textAlign={"center"} mb="50px">
+      <Heading color="#FC4D3C" textAlign={"center"} mb="50px" fontSize={"40px"}>
         Github Statistics
       </Heading>
       <Heading fontSize={"25px"} textAlign={"center"} color="white" mb="30px">

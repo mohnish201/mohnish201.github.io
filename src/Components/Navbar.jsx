@@ -44,7 +44,7 @@ const nonActive = {
 
 
 const active = {
-  color: "#ff4500",
+  color: "#FC4D3CC",
   textDecoration: "none",
   cursor: "pointer",
   transition: "color 0.2s",
@@ -97,14 +97,14 @@ function Navbar() {
         xl: "space-evenly",
       }}
       w={"100%"}
-      bgColor={"#000000"}
+      bgColor={"#080808"}
       py={0}
       px={0}
       position="sticky"
       top={0}
       zIndex="sticky"
       transition="box-shadow 0.2s"
-      boxShadow={shouldElevate ? "0px 0px 14px 0px #e7e4e3fc" : "none"}
+      // boxShadow={shouldElevate ? "0px 0px 14px 0px #e7e4e3fc" : "none"}
       pl="10px"
       pr="10px"
     >

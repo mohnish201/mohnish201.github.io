@@ -34,7 +34,13 @@ function Projects() {
   }, []);
   return (
     <Box m={"auto"} id="projects" mt="200px">
-      <Heading textAlign={"center"} color={"orangered"} data-aos="zoom-in-up">
+      <Heading
+        textAlign={"center"}
+        color={"#FC4D3C"}
+        data-aos="zoom-in-up"
+        fontSize={"40px"}
+        mb="20px"
+      >
         Projects
       </Heading>
       <Center>
@@ -61,10 +67,11 @@ function Projects() {
             padding={"20px"}
             className="project-card"
             data-aos="zoom-in-up"
+            
           >
             {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
 
-            <video autoPlay loop muted>
+            <video autoPlay loop muted style={{borderRadius:"25px"}}>
               <source src={medwise_mockup_video} type="video/mp4" />
             </video>
 
@@ -151,7 +158,7 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted>
+            <video autoPlay loop muted style={{borderRadius:"25px"}}>
               <source src={godecor_mockup_video} type="video/mp4" />
             </video>
             <Heading
@@ -240,7 +247,7 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted>
+            <video autoPlay loop muted style={{borderRadius:"25px"}}>
               <source src={financia_mockup_video} type="video/mp4" />
             </video>
             <Heading
@@ -328,7 +335,7 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted>
+            <video autoPlay loop muted style={{borderRadius:"25px"}}>
               <source src={Money_Mentor_mockup_video} type="video/mp4" />
             </video>
             <Heading
@@ -398,7 +405,7 @@ function Projects() {
                 src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
                 borderRadius={"30px"}
               />
-              
+
               <Image
                 src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
                 borderRadius={"30px"}

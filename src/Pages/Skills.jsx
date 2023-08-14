@@ -24,7 +24,7 @@ function Skills() {
   },[])
   return (
     <div id="skills" style={{ marginTop: "250px" }}>
-      <Heading color={"orangered"} textAlign={"center"}>
+      <Heading color={"#FC4D3C"} textAlign={"center"} fontSize={"40px"}>
         My Skills
       </Heading>
       <Flex
