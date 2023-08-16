@@ -46,14 +46,45 @@ function Contact() {
     }
   };
 
+  const handleToast=()=>{
+    if(data.name, data.message, data.email){
+      toast({
+        title: "Thankyou for Contacting me 😊.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      })
+    }
+    else{
+      toast({
+        title: "Fill all details.",
+        status: "error",
+        duration: 5000,
+        isClosable: true,
+      })
+    }
+    setData(initState)
+  }
+
   useEffect(() => {
     Aos.init();
   }, []);
 
   return (
     <Box id="contact" mt="150px" data-aos="zoom-in-up">
-      <Heading color={"#FC4D3C"} mb="30px" textAlign="center" fontSize={"40px"}>
-      Let's connect and turn ideas into realities!
+      <Heading
+        color={"#FC4D3C"}
+        mb="30px"
+        textAlign="center"
+        fontSize={{
+          base: "35px",
+          sm: "35px",
+          md: "40px",
+          lg: "40px",
+          xl: "40px",
+        }}
+      >
+        Let's connect and turn ideas into realities!
       </Heading>
       <Flex
         justify={"space-evenly"}
@@ -188,14 +219,7 @@ function Contact() {
               <Button
                 type="submit"
                 colorScheme="orange"
-                onClick={() =>
-                  toast({
-                    title: "Thankyou for Contacting me 😊.",
-                    status: "success",
-                    duration: 9000,
-                    isClosable: true,
-                  })
-                }
+                onClick={handleToast}
                 disabled={state.submitting}
               >
                 Send Message
@@ -205,7 +229,7 @@ function Contact() {
         </form>
       </Flex>
 
-      <Box h="120px" bgColor={"#080808"}></Box>
+      <Box h="120px" bgColor={"#000000"}></Box>
     </Box>
   );
 }

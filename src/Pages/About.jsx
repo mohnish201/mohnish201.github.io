@@ -63,7 +63,16 @@ function About() {
         </Box>
 
         <VStack textAlign={"justify"} spacing={"20px"} data-aos="zoom-in-up">
-          <Heading color="#FC4D3C" fontSize={"40px"}>
+          <Heading
+            color="#FC4D3C"
+            fontSize={{
+              base: "35px",
+              sm: "35px",
+              md: "40px",
+              lg: "40px",
+              xl: "40px",
+            }}
+          >
             About Me
           </Heading>
           <Container>
@@ -83,13 +92,6 @@ function About() {
                 lg: "20px",
                 xl: "20px",
               }}
-              // textAlign={{
-              //   base: "center",
-              //   sm: "center",
-              //   md: "center",
-              //   lg: "center",
-              //   xl: "center",
-              // }}
               id="user-detail-intro"
             >
               Greetings! I'm Mohnish Vishwakarma, a skilled full-stack developer

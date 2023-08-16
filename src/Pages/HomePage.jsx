@@ -86,11 +86,13 @@ function HomePage() {
             {/* <Image
               style={{
                 display: "inline",
-                width: "70x",
-                height: "75px",
+                width: "100x",
+                height: "100px",
                 verticalAlign: "middle",
               }}
               src={wave_hand}
+            
+              border="2px solid white"
             /> */}
           </Heading>
           <Heading

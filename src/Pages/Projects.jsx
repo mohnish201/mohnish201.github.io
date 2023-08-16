@@ -38,7 +38,13 @@ function Projects() {
         textAlign={"center"}
         color={"#FC4D3C"}
         data-aos="zoom-in-up"
-        fontSize={"40px"}
+        fontSize={{
+          base: "35px",
+          sm: "35px",
+          md: "40px",
+          lg: "40px",
+          xl: "40px",
+        }}
         mb="20px"
       >
         Projects
@@ -67,20 +73,20 @@ function Projects() {
             padding={"20px"}
             className="project-card"
             data-aos="zoom-in-up"
-            
           >
             {/* <Image src={medwise} alt="medwise" borderRadius="20px" pb="10px" /> */}
 
-            <video autoPlay loop muted style={{borderRadius:"25px"}}>
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
               <source src={medwise_mockup_video} type="video/mp4" />
             </video>
 
             <Heading
               size={"md"}
               textAlign="center"
-              color={"orangered"}
+              color={"#FC4D3C"}
               pb="10px"
               className="project-title"
+              fontSize={"25px"}
             >
               Medwise
             </Heading>
@@ -158,15 +164,16 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={godecor} alt="godecor" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted style={{borderRadius:"25px"}}>
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
               <source src={godecor_mockup_video} type="video/mp4" />
             </video>
             <Heading
               size={"md"}
               textAlign="center"
-              color={"orangered"}
+              color={"#FC4D3C"}
               pb="10px"
               className="project-title"
+              fontSize={"25px"}
             >
               Go Decor
             </Heading>
@@ -247,15 +254,16 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted style={{borderRadius:"25px"}}>
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
               <source src={financia_mockup_video} type="video/mp4" />
             </video>
             <Heading
               size={"md"}
               textAlign="center"
-              color={"orangered"}
+              color={"#FC4D3C"}
               pb="10px"
               className="project-title"
+              fontSize={"25px"}
             >
               Financia
             </Heading>
@@ -335,15 +343,16 @@ function Projects() {
             data-aos="zoom-in-up"
           >
             {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
-            <video autoPlay loop muted style={{borderRadius:"25px"}}>
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
               <source src={Money_Mentor_mockup_video} type="video/mp4" />
             </video>
             <Heading
               size={"md"}
               textAlign="center"
-              color={"orangered"}
+              color={"#FC4D3C"}
               pb="10px"
               className="project-title"
+              fontSize={"25px"}
             >
               Money Mentor
             </Heading>

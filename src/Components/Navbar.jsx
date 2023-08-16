@@ -41,17 +41,16 @@ const nonActive = {
   transition: "color 0.2s",
 };
 
-
-
 const active = {
-  color: "#FC4D3CC",
+  color: "#FC4D3C",
   textDecoration: "none",
   cursor: "pointer",
   transition: "color 0.2s",
+  fontWeight: "bold",
 };
 
 const hover = {
-  color: "red", // Replace with the hover color
+  color: "orangered", // Replace with the hover color
 };
 function Navbar() {
   const [shouldElevate, setShouldElevate] = useState(false);
@@ -97,14 +96,15 @@ function Navbar() {
         xl: "space-evenly",
       }}
       w={"100%"}
-      bgColor={"#080808"}
+      // bgColor={"#000000"}
       py={0}
       px={0}
       position="sticky"
       top={0}
       zIndex="sticky"
-      transition="box-shadow 0.2s"
-      // boxShadow={shouldElevate ? "0px 0px 14px 0px #e7e4e3fc" : "none"}
+      // bgColor={shouldElevate ? "0px 0px 14px 0px #080808" : "#000000"}
+      // transition="bgColor 0.2s"
+      bgColor={"#000000"}
       pl="10px"
       pr="10px"
     >
@@ -132,7 +132,6 @@ function Navbar() {
           lg: "flex",
           xl: "flex",
         }}
-        // _hover={{ color: "orangered" }}
       >
         {Links.map((el) => (
           <Link
@@ -141,7 +140,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-185}
+            offset={-180}
             className={el.class}
             style={nonActive}
             activeStyle={active}
@@ -205,7 +204,7 @@ function Navbar() {
         />
 
         <MenuList>
-          <Link to="home" _hover={{bgColor:"orangered"}}>
+          <Link to="home" _hover={{ bgColor: "orangered" }}>
             <MenuItem>Home</MenuItem>
           </Link>
 
