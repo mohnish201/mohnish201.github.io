@@ -95,6 +95,7 @@ function Projects() {
               color={"white"}
               className="project-description"
               textAlign={"justify"}
+              fontSize="19px"
             >
               Medwise provide Health Care Services which allows you to find
               Doctors and schedule virtual appointments with experienced doctors
@@ -182,6 +183,7 @@ function Projects() {
               pb="10px"
               className="project-description"
               textAlign={"justify"}
+              fontSize="19px"
             >
               Go Decor is a popular retail store in the United States that
               offers a wide range of products for the home, including bedding,
@@ -272,6 +274,7 @@ function Projects() {
               color={"white"}
               className="project-description"
               textAlign={"justify"}
+              fontSize="19px"
             >
               Our financial website is a comprehensive platform that offers a
               wide range of financial services to users. Whether you're looking
@@ -361,6 +364,7 @@ function Projects() {
               pb="10px"
               className="project-description"
               textAlign={"justify"}
+              fontSize="19px"
             >
               Our website is a comprehensive platform that caters to diverse
               financial needs, offering expertly crafted solutions from personal
