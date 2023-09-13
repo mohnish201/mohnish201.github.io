@@ -20,7 +20,12 @@ import typescript from "../Images/typescript.png";
 import vercel from "../Images/vercel.png";
 import express from "../Images/express.png";
 import chakraui from "../Images/chakraui.png";
+import nodejs from "../Images/nodejs.png";
 import canva from "../Images/canva.png";
+import photoshop from '../Images/photoshop.png';
+import postman from '../Images/postman.png';
+import vscode from '../Images/vscode.png';
+
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
@@ -43,9 +48,9 @@ function Skills() {
         }}
         mb="50px"
       >
-        My Expertise
+        Tech Stacks
       </Heading>
-      <Flex
+      {/* <Flex
         justifyContent={"center"}
         mt="60px"
         data-aos="zoom-in-up"
@@ -273,15 +278,426 @@ function Skills() {
             </Text>
           </Box>
         </Carousel>
-      </Flex>
+      </Flex> */}
 
-      <Flex
+      <Box
+        width={{ base: "100%", sm: "100%", md: "90%", lg: "70%", xl: "70%" }}
+        m="auto"
+      >
+        <Heading textAlign={"center"} color="white" mb="20px">
+          Frontend & Backend
+        </Heading>
+
+        <Flex
+          display={{
+            base: "flex",
+            sm: "flex",
+            md: "flex",
+            lg: "flex",
+            xl: "flex",
+          }}
+          flexWrap="wrap"
+          m="auto"
+          gap="60px"
+          justifyContent={"center"}
+          p="20px"
+        >
+          <Box
+            className="skills-card"
+            key={1}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={html} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              HTML 5
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={2}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={css} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              CSS 3
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={3}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={javascript} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              JavaScript
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={4}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={react} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              React
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={5}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={redux} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Redux
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={6}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={chakraui} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Chakra UI
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={11}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={nodejs} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Node JS
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={10}
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+            data-aos="zoom-in-up"
+          >
+            <Image className="skills-card-img" src={mongo} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              MongoDB
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={11}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={express} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Express JS
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
+
+      <Box
+        width={{ base: "100%", sm: "100%", md: "90%", lg: "70%", xl: "70%" }}
+        m="auto"
+        mt="30px"
+      >
+        <Heading textAlign={"center"} color="white" mb="20px">
+          Tech Tools
+        </Heading>
+
+        <Flex
+          display={{
+            base: "flex",
+            sm: "flex",
+            md: "flex",
+            lg: "flex",
+            xl: "flex",
+          }}
+          flexWrap="wrap"
+          m="auto"
+          gap="60px"
+          justifyContent={"center"}
+          p="20px"
+        >
+          <Box
+            className="skills-card"
+            key={8}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+
+            
+          >
+            <Image className="skills-card-img" src={vercel} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Vercel
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={9}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={netlify} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Netlify
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={9}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={vscode} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Vscode
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={9}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={photoshop} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Photoshop
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={9}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={postman} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Postman
+            </Text>
+          </Box>
+
+          <Box
+            className="skills-card"
+            key={9}
+            data-aos="zoom-in-up"
+            w={{
+              base: "80px",
+              sm: "80px",
+              md: "100px",
+              lg: "100px",
+              xl: "100px",
+            }}
+          >
+            <Image className="skills-card-img" src={canva} />
+            <Text
+              className="skills-card-name"
+              textAlign={"center"}
+              color={"white"}
+              fontSize="20px"
+              mt={"5px"}
+            >
+              Canva
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
+
+      {/* <Flex
         display={{
           base: "flex",
           sm: "flex",
           md: "flex",
-          lg: "none",
-          xl: "none",
+          lg: "flex",
+          xl: "flex",
         }}
         flexWrap="wrap"
         m="auto"
@@ -398,7 +814,7 @@ function Skills() {
             Express JS
           </Text>
         </Box>
-      </Flex>
+      </Flex> */}
     </div>
   );
 }

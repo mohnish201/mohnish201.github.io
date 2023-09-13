@@ -8,7 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import enhancedPhoto from "../Images/enhancedPhoto.png";
+import enhancedPP from "../Images/enhancedPP.jpg";
 
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -27,7 +27,13 @@ function About() {
     >
       <Flex
         justifyContent={"space-evenly"}
-        alignItems={"center"}
+        alignItems={{
+          base: "center",
+          sm: "center",
+          md: "flex-end",
+          lg: "flex-end",
+          xl: "flex-end",
+        }}
         gap={"20px"}
         width="90%"
         m="auto"
@@ -52,7 +58,7 @@ function About() {
           data-aos="fade-right"
         >
           <Image
-            src={enhancedPhoto}
+            src={enhancedPP}
             alt="Profile"
             w="100%"
             backgroundColor={"#CDFFE9"}
@@ -75,31 +81,38 @@ function About() {
           >
             About Me
           </Heading>
-          <Container>
-            <Text
-              color="white"
-              w={{
-                base: "280px",
-                sm: "280px",
-                md: "320px",
-                lg: "350px",
-                xl: "350px",
-              }}
-              fontSize={{
-                base: "18px",
-                sm: "18px",
-                md: "18px",
-                lg: "20px",
-                xl: "20px",
-              }}
-              id="user-detail-intro"
-            >
-              Greetings! I'm Mohnish Vishwakarma, a skilled full-stack developer
-              with a passion for creating efficient and user-friendly web
-              applications. With expertise in both Frontend and Backend
-              development, I thrive on bringing digital visions to life.
-            </Text>
-          </Container>
+          {/* <Container> */}
+          <Text
+            color="white"
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "400px",
+              lg: "450px",
+              xl: "480px",
+            }}
+            fontSize={{
+              base: "15px",
+              sm: "15px",
+              md: "15px",
+              lg: "20px",
+              xl: "20px",
+            }}
+            id="user-detail-intro"
+            backgroundColor={"whiteAlpha.200"}
+            p="20px"
+            borderRadius={"15px"}
+            // fontFamily={"sans"}
+          >
+            I am a highly motivated Full Stack Web Developer with expertise in
+            the MERN stack. I successfully completed an intensive 1200+ hour web
+            development program at Masai School, mastering both frontend and
+            backend development. I excel at implementing creative solutions and
+            thrive in collaborative team environments. My meticulous attention
+            to detail and unwavering passion for problem-solving set me apart in
+            the field.
+          </Text>
+          {/* </Container> */}
         </VStack>
       </Flex>
     </div>

@@ -3,6 +3,11 @@ import enhacedPhoto from "../Images/enhancedPhoto.png";
 import developer_male from "../Images/developer_male.png";
 import wave_hand from "../Images/wave _hand.gif";
 import homepage_image from "../Images/homepage_image.png";
+import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
+import { SiGithub } from "react-icons/si";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { Link as ReachLink } from "@chakra-ui/react";
+// import { HiDocumentDownload } from "react-icons/hi";
 import {
   Box,
   Button,
@@ -11,6 +16,7 @@ import {
   Image,
   Link,
   VStack,
+  HStack,
 } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import styled, { keyframes } from "styled-components";
@@ -108,19 +114,54 @@ function HomePage() {
           >
             I'am Mohnish,
           </Heading>
-          <Typewriter
-            options={{
-              loop: true,
+
+          <Heading
+            fontSize={{
+              base: "20px",
+              sm: "20px",
+              md: "30px",
+              lg: "30px",
+              xl: "40px",
             }}
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Web Developer")
-                .pauseFor(1000)
-                .deleteAll()
-                .start();
-            }}
-            id="user-detail-intro"
-          />
+            fontWeight="medium"
+          >
+            <Typewriter
+              options={{
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Full Stack Web Developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .start();
+              }}
+              id="user-detail-intro"
+            />
+          </Heading>
+
+          <HStack
+            color="white"
+            spacing={"20px"}
+            cursor={"pointer"}
+            fontSize="20px"
+          >
+            <ReachLink
+              href="https://www.linkedin.com/in/mohnish-vishwakarma-172196230/"
+              target="_blank"
+            >
+              <GrLinkedin />
+            </ReachLink>
+            <ReachLink href="https://github.com/mohnish201" target="_blank">
+              <SiGithub />
+            </ReachLink>
+            <ReachLink
+              href="https://www.instagram.com/mohnish201/"
+              target="_blank"
+            >
+              <GrInstagram />
+            </ReachLink>
+          </HStack>
 
           <Link
             href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"

@@ -21,6 +21,7 @@ import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
 import { SiGithub } from "react-icons/si";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { HiDocumentDownload } from "react-icons/hi";
+import styles from "./Navbar.module.css";
 
 import { Link } from "react-scroll";
 import { Link as ReachLink } from "@chakra-ui/react";
@@ -40,6 +41,10 @@ const nonActive = {
   cursor: "pointer",
   transition: "color 0.2s",
 };
+
+// const navlink = {
+//   _hover:{color:""}
+// }
 
 const active = {
   color: "#FC4D3C",
@@ -151,18 +156,6 @@ function Navbar() {
         ))}
       </HStack>
 
-      {/* <HStack color="white" spacing={"20px"} cursor={"pointer"}>
-        <ReachLink>
-          <GrLinkedin />
-        </ReachLink>
-        <ReachLink>
-          <SiGithub />
-        </ReachLink>
-        <ReachLink>
-          <GrInstagram />
-        </ReachLink>
-      </HStack> */}
-
       <ReachLink
         href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
         download
@@ -203,32 +196,48 @@ function Navbar() {
           border="none"
         />
 
-        <MenuList>
-          <Link to="home" _hover={{ bgColor: "orangered" }}>
-            <MenuItem>Home</MenuItem>
+        <MenuList bgColor={"black"} color="white">
+          <Link to="home">
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              Home
+            </MenuItem>
           </Link>
 
           <Link to="skills">
-            <MenuItem>Skills</MenuItem>
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              Skills
+            </MenuItem>
           </Link>
 
           <Link to="about">
-            <MenuItem>About</MenuItem>
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              About
+            </MenuItem>
           </Link>
 
           <Link to="projects">
-            <MenuItem>Projects</MenuItem>
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              Projects
+            </MenuItem>
           </Link>
 
           <Link to="statistics">
-            <MenuItem>Statistics</MenuItem>
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              Statistics
+            </MenuItem>
           </Link>
 
           <Link to="contact">
-            <MenuItem>Contact</MenuItem>
+            <MenuItem bgColor={"black"} borderBottom="1px solid #FC4D3C">
+              Contact
+            </MenuItem>
           </Link>
 
-          <MenuItem onClick={handleDownload} id="resume-button-1">
+          <MenuItem
+            onClick={handleDownload}
+            id="resume-button-1"
+            bgColor={"black"}
+          >
             Resume
           </MenuItem>
         </MenuList>

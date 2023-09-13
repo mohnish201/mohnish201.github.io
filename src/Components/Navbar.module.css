@@ -1,20 +1,20 @@
 /* Navbar.module.css */
-.navlink {
+/* .navlink {
     text-decoration: none;
     color: white;
     cursor: pointer;
     transition: color 0.2s;
-  }
+  } */
   
-  .navlink-active {
+  /* .navlink-active {
     color: orangered;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s;
-  }
+  } */
   
   .navlink:hover {
-    color: orangered; /* Replace with the hover color */
+    color: #FC4D3C; /* Replace with the hover color */
   }
   
   /* Add other styles if needed */
