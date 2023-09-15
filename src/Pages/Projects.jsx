@@ -24,6 +24,8 @@ import medwise_mockup_video from "../Images/mediwse_mockup_video.mp4";
 import financia_mockup_video from "../Images/financia_mockup_video.mp4";
 import godecor_mockup_video from "../Images/godecor_mockup_video.mp4";
 import Money_Mentor_mockup_video from "../Images/Money_Mentor_mockup_video.mp4";
+import notes_mockup from "../Images/notes_mockup.mp4";
+import Pro_Task_mockup from "../Images/Pro_Task_mockup.mp4";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
@@ -62,6 +64,219 @@ function Projects() {
           rowGap={"40px"}
           placeItems="center"
         >
+          {/* //notes app */}
+          <GridItem
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+            data-aos="zoom-in-up"
+          >
+            {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
+              <source src={notes_mockup} type="video/mp4" />
+            </video>
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"#FC4D3C"}
+              pb="10px"
+              className="project-title"
+              fontSize={"25px"}
+            >
+              Keep My-notes
+            </Heading>
+            <Text
+              color={"white"}
+              pb="10px"
+              className="project-description"
+              textAlign={"justify"}
+              fontSize="19px"
+            >
+              The Keep My-Notes Platform simplifies the task of creating and
+              managing personalized notes, offering users a user-friendly
+              interface for efficient note-taking and organization.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Link
+                href="https://github.com/mohnish201/Notes_App"
+                target="_blank"
+              >
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link href="https://keep-mynotes.netlify.app/" target="_blank">
+                <Button
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
+              <Image
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
+
+          {/* pro-task */}
+          <GridItem
+            w={{
+              base: "300px",
+              sm: "300px",
+              md: "600px",
+              lg: "400px",
+              xl: "600px",
+            }}
+            padding={"20px"}
+            className="project-card"
+            data-aos="zoom-in-up"
+          >
+            {/* <Image src={finacia} alt="financia" borderRadius="20px" pb="10px" /> */}
+            <video autoPlay loop muted style={{ borderRadius: "25px" }}>
+              <source src={Pro_Task_mockup} type="video/mp4" />
+            </video>
+            <Heading
+              size={"md"}
+              textAlign="center"
+              color={"#FC4D3C"}
+              pb="10px"
+              className="project-title"
+              fontSize={"25px"}
+            >
+              Pro-Task
+            </Heading>
+            <Text
+              color={"white"}
+              pb="10px"
+              className="project-description"
+              textAlign={"justify"}
+              fontSize="19px"
+            >
+              ProTask is designed to empower efficient task and project
+              management. Seamlessly organize, track, and prioritize tasks while
+              overseeing the progress of complex projects.
+            </Text>
+
+            <HStack justifyContent={"center"} pb="20px" spacing="20px">
+              <Link
+                href="https://github.com/mohnish201/Pro-Task"
+                target="_blank"
+              >
+                <Button
+                  colorScheme={"red"}
+                  size="sm"
+                  leftIcon={<BsGithub color="white" />}
+                  className="project-github-link"
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link href="https://protask.netlify.app/" target="_blank">
+                <Button
+                  colorScheme={"cyan"}
+                  size="sm"
+                  leftIcon={<SiNetlify color="white" />}
+                  className="project-deployed-link"
+                >
+                  Netlify
+                </Button>
+              </Link>
+            </HStack>
+            <Heading size={"sm"} color="white" textAlign={"center"} pb="10px">
+              Tech Stacks
+            </Heading>
+            <HStack
+              justifyContent={"center"}
+              className="project-tech-stack"
+              flexWrap="wrap"
+            >
+              <Image
+                src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="	https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                borderRadius={"30px"}
+              />
+              <Image
+                src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white"
+                borderRadius={"30px"}
+              />
+
+              <Image
+                src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                borderRadius={"30px"}
+              />
+            </HStack>
+          </GridItem>
           <GridItem
             w={{
               base: "300px",

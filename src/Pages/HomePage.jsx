@@ -2,11 +2,12 @@ import React from "react";
 import enhacedPhoto from "../Images/enhancedPhoto.png";
 import developer_male from "../Images/developer_male.png";
 import wave_hand from "../Images/wave _hand.gif";
-import homepage_image from "../Images/homepage_image.png";
+import homepage_image_optimized from "../Images/homepage_image_optimized.png";
 import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
 import { SiGithub } from "react-icons/si";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link as ReachLink } from "@chakra-ui/react";
+
 // import { HiDocumentDownload } from "react-icons/hi";
 import {
   Box,
@@ -27,9 +28,13 @@ import Aos from "aos";
 
 function HomePage() {
   const handleDownload = () => {
-    window.open(
-      "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=sharing"
-    );
+    // window.location.href =
+    //   "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=sharing";
+
+    setTimeout(function () {
+      window.location.href =
+        "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view";
+    }, 1000);
   };
 
   useEffect(() => {
@@ -162,10 +167,10 @@ function HomePage() {
               <GrInstagram />
             </ReachLink>
           </HStack>
-          https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link
+
           <Link
             href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
-            target="_blank"
+            // to="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
             download
           >
             <Button
@@ -190,7 +195,7 @@ function HomePage() {
           }}
         >
           <FloatingImage
-            src={homepage_image}
+            src={homepage_image_optimized}
             alt="profile_pic"
             width={"100%"}
           />

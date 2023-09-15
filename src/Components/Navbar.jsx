@@ -159,7 +159,6 @@ function Navbar() {
       <ReachLink
         href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
         download
-        target={"_blank"}
       >
         <Button
           colorScheme="purple"
