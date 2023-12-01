@@ -28,13 +28,16 @@ import Aos from "aos";
 
 function HomePage() {
   const handleDownload = () => {
-    // window.location.href =
-    //   "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=sharing";
-
-    setTimeout(function () {
-      window.location.href =
-        "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view";
-    }, 1000);
+    
+    const anchor = document.createElement("a");
+    anchor.href =
+      process.env.PUBLIC_URL + "/Resume/" + "Mohnish-Vishwakarma-Resume.pdf";
+    anchor.download = "Mohnish-Vishwakarma-Resume.pdf";
+    anchor.click();
+    window.open(
+      "https://drive.google.com/file/d/1VA_oa7Eb4OUAmrxpbBv2Hc9sRRIQr0IY/view?usp=sharing",
+      "_blank"
+    );
   };
 
   useEffect(() => {
@@ -168,15 +171,11 @@ function HomePage() {
             </ReachLink>
           </HStack>
 
-          <Link
-            href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
-            // to="https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=drive_link"
-            download
-          >
+          <Link>
             <Button
               colorScheme="purple"
               rightIcon={<HiDocumentDownload />}
-              // onClick={handleDownload}
+              onClick={handleDownload}
               className="nav-link resume"
               id="resume-button-2"
             >

@@ -15,6 +15,7 @@ import {
   color,
   Button,
   background,
+  textDecoration,
 } from "@chakra-ui/react";
 import Mohclickslogowhite from "../Images/Mohclickslogowhite.png";
 import { GrLinkedin, GrGithub, GrInstagram } from "react-icons/gr";
@@ -84,8 +85,14 @@ function Navbar() {
   }, []);
 
   const handleDownload = () => {
+    const anchor = document.createElement("a");
+    anchor.href =
+      process.env.PUBLIC_URL + "/Resume/" + "Mohnish-Vishwakarma-Resume.pdf";
+    anchor.download = "Mohnish-Vishwakarma-Resume.pdf";
+    anchor.click();
     window.open(
-      "https://drive.google.com/file/d/1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4/view?usp=sharing"
+      "https://drive.google.com/file/d/1VA_oa7Eb4OUAmrxpbBv2Hc9sRRIQr0IY/view?usp=sharing",
+      "_blank"
     );
   };
 
@@ -156,14 +163,11 @@ function Navbar() {
         ))}
       </HStack>
 
-      <ReachLink
-        href="https://drive.google.com/uc?export=download&id=1Aol7eZHlJGh7Gdc9LwK7xYEftkXLxyj4"
-        download
-      >
+      <ReachLink _hover={{textDecoration:"none"}}>
         <Button
           colorScheme="purple"
           rightIcon={<HiDocumentDownload />}
-          // onClick={handleDownload}
+          onClick={handleDownload}
           className="nav-link resume"
           id="resume-button-1"
           size={"sm"}

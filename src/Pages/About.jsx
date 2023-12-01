@@ -104,13 +104,14 @@ function About() {
             borderRadius={"15px"}
             // fontFamily={"sans"}
           >
-            I am a highly motivated Full Stack Web Developer with expertise in
-            the MERN stack. I successfully completed an intensive 1200+ hour web
-            development program at Masai School, mastering both frontend and
-            backend development. I excel at implementing creative solutions and
-            thrive in collaborative team environments. My meticulous attention
-            to detail and unwavering passion for problem-solving set me apart in
-            the field.
+            I am a highly motivated Full Stack Web Developer with a strong
+            foundation in prompt engineering and expertise in both the MERN and
+            MEAN stacks. My journey includes an intensive 1200+ hour web
+            development program at Masai School, where I honed my skills in
+            frontend and backend development. I have a knack for implementing
+            innovative solutions and thrive in collaborative engineering
+            environments. My meticulous attention to detail and passion for
+            problem-solving are key drivers that set me apart in the field.
           </Text>
           {/* </Container> */}
         </VStack>
