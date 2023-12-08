@@ -91,7 +91,7 @@ function Navbar() {
     anchor.download = "Mohnish-Vishwakarma-Resume.pdf";
     anchor.click();
     window.open(
-      "https://drive.google.com/file/d/1VA_oa7Eb4OUAmrxpbBv2Hc9sRRIQr0IY/view?usp=sharing",
+      "https://drive.google.com/file/d/1kVHqq4LHmpxV0FuGjG1pbCb_olp3zlP3/view?usp=sharing",
       "_blank"
     );
   };
